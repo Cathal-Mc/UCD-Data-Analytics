@@ -491,4 +491,3 @@ print("Median height of goalkeepers: " + str(np.median(gk_heights)))
 
 # Print out the median height of other players. Replace 'None'
 print("Median height of other players: " + str(np.median(other_heights)))
-
