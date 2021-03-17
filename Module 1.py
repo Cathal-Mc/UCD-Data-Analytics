@@ -1,3 +1,7 @@
+import numpy as np
+import math
+from math import radians
+
 # This is a sample Python script.
 
 # Press Shift+F10 to execute it or replace it with your code.
@@ -8,7 +12,6 @@
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -106,7 +109,7 @@ bed = 10.75
 bath = 9.50
 
 # Adapt list areas
-areas = ["hallway", hall, "kitchen", kit, "living room", liv,"bedroom", bed, "bathroom", bath]
+areas = ["hallway", hall, "kitchen", kit, "living room", liv, "bedroom", bed, "bathroom", bath]
 
 # Print areas
 print(areas)
@@ -227,7 +230,7 @@ second = [10.75, 9.50]
 full = first + second
 
 # Sort full in descending order: full_sorted
-full_sorted = sorted(full, reverse = True)
+full_sorted = sorted(full, reverse=True)
 
 # Print out full_sorted
 print(full_sorted)
@@ -273,7 +276,6 @@ print(areas)
 r = 0.43
 
 # Import the math package
-import math
 
 # Calculate C
 C = 2*math.pi*r
@@ -289,7 +291,6 @@ print("Area: " + str(A))
 r = 192500
 
 # Import radians function of math package
-from math import radians
 
 # Travel distance of Moon over 12 degrees. Store in dist.
 dist = r*radians(12)
@@ -298,8 +299,6 @@ dist = r*radians(12)
 print(dist)
 
 #Numpy
-
-import numpy as np
 
 # Create list baseball
 baseball = [180, 215, 210, 210, 188, 176, 209, 200]

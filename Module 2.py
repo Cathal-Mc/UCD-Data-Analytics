@@ -347,7 +347,7 @@ print(cars.loc[:, ['drives_right']])
 # Print out cars_per_cap and drives_right as DataFrame
 print(cars.loc[:, ['cars_per_cap', 'drives_right']])
 
-#Logic, Control Flow and Filtering
+# Logic, Control Flow and Filtering
 
 # Comparison of booleans
 True == False
@@ -390,13 +390,12 @@ your_kitchen = 14.0
 print(my_kitchen > 10 and my_kitchen < 18)
 
 # my_kitchen smaller than 14 or bigger than 17?
-print(my_kitchen <14 or my_kitchen > 17)
+print(my_kitchen < 14 or my_kitchen > 17)
 
 # Double my_kitchen smaller than triple your_kitchen?
 print(my_kitchen * 2 < your_kitchen * 3)
 
 # Create arrays
-import numpy as np
 my_house = np.array([18.0, 20.0, 10.75, 9.50])
 your_house = np.array([14.0, 24.0, 14.25, 9.0])
 
@@ -418,32 +417,32 @@ if room == "kit":
 if area > 15:
     print("big place!")
 
- # Define variables
+# Define variables
 room = "kit"
 area = 14.0
 
 # if-else construct for room
 if room == "kit":
-        print("looking around in the kitchen.")
+    print("looking around in the kitchen.")
 else:
-        print("looking around elsewhere.")
+    print("looking around elsewhere.")
 
     # if-else construct for area
-    if area > 15:
-        print("big place!")
-    else:
-        print("pretty small.")
+if area > 15:
+    print("big place!")
+else:
+    print("pretty small.")
 
 # Define variables
         room = "bed"
         area = 14.0
 
 # if-elif-else construct for room
- if room == "kit":
+if room == "kit":
             print("looking around in the kitchen.")
-    elif room == "bed":
+elif room == "bed":
             print("looking around in the bedroom.")
-    else:
+else:
             print("looking around elsewhere.")
 
 # if-elif-else construct for area
