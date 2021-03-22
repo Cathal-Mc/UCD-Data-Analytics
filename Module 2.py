@@ -1,5 +1,15 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+
+file_3 = pd.read_csv('C:\\Users\\catha\\PycharmProjects\\UCD Introduction to Data Analytics\\brics.csv')
+file_4 = pd.read_csv('C:\\Users\\catha\\PycharmProjects\\UCD Introduction to Data Analytics\\cars.csv')
+file_5 = pd.read_csv('C:\\Users\\catha\\PycharmProjects\\UCD Introduction to Data Analytics\\gapminder.csv')
+
+gdp_cap = file_5['gdp_cap']
+life_exp = file_5['life_exp']
+pop = file_5['population']
+year = file_5['year']
 # Matplotlib
 
 # Print the last item from year and pop
@@ -434,8 +444,8 @@ else:
     print("pretty small.")
 
 # Define variables
-        room = "bed"
-        area = 14.0
+room = 'bed'
+area = 14.0
 
 # if-elif-else construct for room
 if room == "kit":
@@ -562,7 +572,6 @@ for key, value in europe.items():
     print("the capital of " + str(key) + " is " + str(value))
 
 # Import numpy as np
-import numpy as np
 
 # For loop over np_height
 for x in np_height :
@@ -602,7 +611,6 @@ for lab, row in cars.iterrows():
 print(cars)
 
 # Import cars data
-import pandas as pd
 cars = pd.read_csv('cars.csv', index_col = 0)
 
 # Use .apply(str.upper)
@@ -611,8 +619,7 @@ print(cars)
 
 #Case Study:Hacker Statistics
 
-# Import numpy as np
-import numpy as np
+# Import numpy as npp
 
 # Set the seed
 np.random.seed(123)
@@ -621,7 +628,6 @@ np.random.seed(123)
 print(np.random.rand())
 
 # Import numpy and set seed
-import numpy as np
 np.random.seed(123)
 
 # Use randint() to simulate a dice
@@ -717,7 +723,6 @@ for x in range(100) :
     random_walk.append(step)
 
 # Import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
 
 # Plot random_walk
 plt.plot(random_walk)

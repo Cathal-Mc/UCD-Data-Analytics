@@ -1,6 +1,13 @@
 import numpy as np
 import math
 from math import radians
+import pandas as pd
+
+file_1 = pd.read_csv('C:\\Users\catha\\PycharmProjects\\UCD Introduction to Data Analytics\\baseball.csv')
+print(file_1.head())
+
+file_2 = pd.read_csv('C:\\Users\\catha\\PycharmProjects\\UCD Introduction to Data Analytics\\fifa.csv')
+print(file_2.head())
 
 # This is a sample Python script.
 
@@ -299,6 +306,9 @@ dist = r*radians(12)
 print(dist)
 
 #Numpy
+height_in= file_1['Height']
+weight_lb= file_1['Weight']
+
 
 # Create list baseball
 baseball = [180, 215, 210, 210, 188, 176, 209, 200]
@@ -409,7 +419,7 @@ print(np_baseball.shape)
 # Import numpy package
 
 # Create np_baseball (2 cols)
-np_baseball = np.array(baseball)
+np_baseball = np.array(file_1)
 
 # Print out the 50th row of np_baseball
 print(np_baseball[49])
@@ -474,6 +484,8 @@ print("Correlation: " + str(corr))
 # heights and positions are available as lists
 
 # Import numpy
+positions = file_2['positioning']
+heights = file_2['height']
 
 # Convert positions and heights to numpy arrays: np_positions, np_heights
 np_positions = np.array(positions)
